@@ -1,13 +1,14 @@
 'use client'
 
 interface CategoryInputProps {
-  icon: iconType;
+  icon: IconType;
   label: string;
   selected?: boolean;
   onClick:( value: string) => void;
 }
 
 import React from 'react'
+import { IconType } from 'react-icons';
 const CategoryInput:React.FC<CategoryInputProps> = ({
   icon: Icon,
   label,
